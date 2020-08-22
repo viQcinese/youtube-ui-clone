@@ -169,3 +169,9 @@
     display: flex;
   }
 }
+
+@media(min-width: 1015px) {
+  #page-header-content {
+    grid-area: header;
+  }
+}

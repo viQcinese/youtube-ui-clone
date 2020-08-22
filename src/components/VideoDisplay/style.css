@@ -1,7 +1,15 @@
 .video-display-container {
   margin-bottom: 24px;
+  max-width: 1100px;
 }
 
 .video-display-container video {
   width: 100%;
+  max-height: 80vh !important;
+}
+
+@media(min-width: 905px) {
+  .video-display-container {
+    grid-area: video-display;
+  }
 }

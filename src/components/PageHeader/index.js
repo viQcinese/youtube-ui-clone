@@ -54,8 +54,8 @@ function PageHeader() {
           <img src={search}/>
         </button>
       </div>
-      <div className="user-container" onClick={handleSearchCall}>
-        <div className="search-call">
+      <div className="user-container">
+        <div className="search-call" onClick={handleSearchCall}>
           <img src={search}/>
         </div>
         <AddVideoMenu />

@@ -1,0 +1,114 @@
+.comments-container {
+
+}
+
+.comments-container .comments-info {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.comments-container .comments-info span {
+  font-size: 16px;
+  color: var(--color-dark);
+}
+
+.comments-container .comments-info .sort {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.comments-container .comments-info .sort img {
+  width: 18px;
+} 
+
+.comments-container .comments-info .sort span {
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.comments-container .add-comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.comments-container .add-comment img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.comments-container .add-comment form {
+  width: 100%;
+  position: relative;
+}
+
+.comments-container .add-comment form .input-container {
+  position: relative;
+}
+
+.comments-container .add-comment form .input-container input {
+  border: none;
+  outline: none;
+  background: var(--color-background);
+  width: 100%;
+  border-bottom: 1px solid var(--color-hr);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: 300;
+}
+
+.comments-container .add-comment form .input-container::after {
+  content: '';
+  bottom: 10px;
+  left: 50%;
+  height: 2px;
+  width: 0;
+  background: var(--color-text-dark);
+  position: absolute;
+} 
+
+.comments-container .add-comment form .input-container:focus-within::after {
+  content: '';
+  bottom: 10px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--color-text-dark);
+  position: absolute;
+  transition: 0.3s;
+} 
+
+.comments-container .add-comment form .buttons-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.comments-container .add-comment form .buttons-container .cancel-button {
+  background: none;
+  color: var(--color-text);
+  padding: 8px 14px;
+  border: none;
+  margin-right: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.comments-container .add-comment form .buttons-container .comment-button {
+  background: #ccc;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media(min-width: 905px) {
+  .comments-container {
+    grid-area: comments;
+  }
+}

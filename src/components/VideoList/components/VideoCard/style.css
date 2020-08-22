@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .video-card-container .video {
@@ -16,8 +17,8 @@
 }
 
 .video-card-container .video .video-thumbnail img {
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 95px;
 }
 
 .video-card-container .video .video-thumbnail .progress-bar {
@@ -44,19 +45,35 @@
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+
+  
 }
 
 .video-card-container .video .video-info strong {
   font-size: 14px;
   font-weight: 500;
   color: var(--color-text-dark);
-  line-height: 24px;
+
+  margin-bottom: 5px;
+
+  /* Overflow hidden with line limit of 2 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
 }
 
 .video-card-container .video .video-info span {
   font-size: 13px;
   color: var(--color-text);
   line-height: 18px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; 
+  -webkit-box-orient: vertical;
 }
 
 .video-card-container .more img {
