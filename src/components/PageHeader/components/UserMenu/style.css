@@ -1,0 +1,10 @@
+.user-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-menu img {
+    height: 32px;
+    border-radius: 50%;
+}

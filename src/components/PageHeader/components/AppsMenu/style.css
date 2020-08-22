@@ -1,0 +1,29 @@
+.apps-menu {
+  margin-right: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.apps-menu:last-child {
+  margin: 0;
+}
+
+.apps-menu img {
+  height: 20px;
+} 
+
+.apps-menu:hover::after {
+  content: 'Search';
+  color: white;
+  filter: none;
+  font-size: 12px;
+  background-color: #555;
+  opacity: 0.9;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 70px;
+  border-radius: 2px;
+  position: absolute;
+}

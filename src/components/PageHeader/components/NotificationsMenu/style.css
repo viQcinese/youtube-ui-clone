@@ -1,0 +1,28 @@
+.notifications-menu {
+  margin-right: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.notifications-menu:last-child {
+  margin: 0;
+}
+
+.notifications-menu img {
+  height: 20px;
+} 
+
+.notifications-menu:hover::after {
+  content: 'Notifications';
+  color: white;
+  font-size: 12px;
+  background-color: #555;
+  opacity: 0.9;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 70px;
+  border-radius: 2px;
+  position: absolute;
+}

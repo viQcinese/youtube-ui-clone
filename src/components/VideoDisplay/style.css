@@ -1,0 +1,7 @@
+.video-display-container {
+  margin-bottom: 24px;
+}
+
+.video-display-container video {
+  width: 100%;
+}

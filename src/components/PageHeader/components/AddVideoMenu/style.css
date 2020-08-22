@@ -1,0 +1,29 @@
+
+.add-video-menu {
+  margin-right: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.add-video-menu:last-child {
+  margin: 0;
+}
+
+.add-video-menu img {
+  height: 20px;
+} 
+
+.add-video-menu:hover::after {
+  content: 'Create';
+  color: white;
+  font-size: 12px;
+  background-color: #555;
+  opacity: 0.9;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 70px;
+  border-radius: 2px;
+  position: absolute;
+}
