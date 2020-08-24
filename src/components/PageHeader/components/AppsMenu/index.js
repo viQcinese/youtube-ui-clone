@@ -16,7 +16,7 @@ function AppsMenu() {
         appsMenuDropDown.style.display = "none"
         appsMenuAfter.style.display = "flex"
       } else {
-        if (e.target.id === "apps") {
+        if (e.target.id === "apps-menu-click") {
           appsMenuDropDown.style.display = "flex"
           appsMenuAfter.style.display = "none"
         }
@@ -26,7 +26,7 @@ function AppsMenu() {
 
   return (
     <div className="apps-menu">
-      <img src={grid} className="icon" id="apps"/>
+      <img src={grid} className="icon" id="apps-menu-click"/>
       <div className="after">
         YouTube apps
       </div>

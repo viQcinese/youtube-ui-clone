@@ -17,7 +17,7 @@ function AddVideoMenu() {
         addVideoDropDown.style.display = "none"
         addVideoAfter.style.display = "flex"
       } else {
-        if (e.target.id === "add-video-icon") {
+        if (e.target.id === "add-video-click") {
           addVideoDropDown.style.display = "flex"
           addVideoAfter.style.display = "none"
         }
@@ -27,7 +27,7 @@ function AddVideoMenu() {
 
   return (
     <div className="add-video-menu">
-      <img src={video} className="icon" id="add-video-icon"/>
+      <img src={video} className="icon" id="add-video-click"/>
       <div className="after">
         Create a video or post
       </div>
