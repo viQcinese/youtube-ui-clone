@@ -9,7 +9,6 @@
 } 
 
 .add-video-menu .after {
-  content: 'Create a video or post';
   white-space: nowrap;
   color: white;
   font-size: 12px;

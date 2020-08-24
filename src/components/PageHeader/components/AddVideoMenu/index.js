@@ -10,24 +10,24 @@ function AddVideoMenu() {
 
   useEffect(() => {
     document.addEventListener('click', e => {
-      const dropDown = document.querySelector(".add-video-menu .drop-down");
-      const after = document.querySelector(".add-video-menu .after");
+      const addVideoDropDown = document.querySelector(".add-video-menu .drop-down");
+      const addVideoAfter = document.querySelector(".add-video-menu .after");
 
-      if (dropDown.style.display !== "none") {
-        dropDown.style.display = "none"
-        after.style.display = "flex"
+      if (addVideoDropDown.style.display !== "none") {
+        addVideoDropDown.style.display = "none"
+        addVideoAfter.style.display = "flex"
       } else {
-        e.target.id === "add-video"
-          ? dropDown.style.display = "flex"
-          : dropDown.style.display = "none"
-        after.style.display = "none"
+        if (e.target.id === "add-video-icon") {
+          addVideoDropDown.style.display = "flex"
+          addVideoAfter.style.display = "none"
+        }
       }
     })
   }, [])
 
   return (
     <div className="add-video-menu">
-      <img src={video} className="icon" id="add-video"/>
+      <img src={video} className="icon" id="add-video-icon"/>
       <div className="after">
         Create a video or post
       </div>

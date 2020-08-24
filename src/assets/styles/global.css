@@ -31,3 +31,9 @@ html, body, #root {
 .icon {
   filter: invert(34%) sepia(0%) saturate(1022%) hue-rotate(175deg) brightness(103%) contrast(84%)
 }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-hr);  
+  margin: 8px 0;
+}
